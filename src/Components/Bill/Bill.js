@@ -9,8 +9,6 @@ function Bill({products, empty, remove}) {
     
     const productCount = products.length
 
-    console.log(productCount);
-
     const handleEmptyBill = () => {
         empty();
     }
@@ -28,7 +26,7 @@ function Bill({products, empty, remove}) {
     return (
         <div className="bill">
             <div className="bill__information">
-                <div className="cafe">
+                <div className="shop">
                     <div className="customer_name">
                         <div className="seller-info">
                             <h1>WebX Global LLC</h1>
