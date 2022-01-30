@@ -7,6 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 function Bill({products, empty, remove}) {       
     var total = products.reduce((amount, item) => (amount+parseInt(item.price)),0);        
     
+    const productCount = products.length
+
+    console.log(productCount);
+
     const handleEmptyBill = () => {
         empty();
     }
@@ -19,8 +23,8 @@ function Bill({products, empty, remove}) {
         remove(item);
     }
 
-    const notify = () => toast("Wow so easy!");
-    
+    const notify = () => toast.success("The Order is Saved Successfully",{position: "top-right",autoClose: 3000,});
+
     return (
         <div className="bill">
             <div className="bill__information">
@@ -82,7 +86,7 @@ function Bill({products, empty, remove}) {
                       
                     <div className="subtotal__price">                                                      
                         <p>
-                        Items <span>4 (4.00)</span>
+                        Items <span>{productCount} ({productCount}.00)</span>
                         </p>
                         <p>
                         Total <span>$ {total}</span>
@@ -99,14 +103,15 @@ function Bill({products, empty, remove}) {
 
             </div>
             <div className="bill__actions">
-                <button className='total-payable' >Total Payable + </button>            
+                <button className='total-payable' >Total Payable + <span> $ {total} </span> </button>            
                 <button className='suspend'>Suspend</button>
-                <button className='order'>Order</button>
-                <button className='payment'>Payment</button>
+                <button className='order' onClick={notify}>Order</button>
+                <button className='payment'  >Payment</button>
                 
                 <button className='cancel' onClick={() => handleEmptyBill()}>Cancel</button>
                 <button className='bill-preview' onClick={() => handlePrint()} >Bill Preview</button>
             </div>
+            <ToastContainer />
         </div>
     )
 }
