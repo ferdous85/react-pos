@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;        
+    box-sizing: border-box;
+}
+
+.app {
+   
+    height: 100vh;
+    overflow: hidden;
+    
+    .pos {
+        height: 100vh;
+        display: flex;                
+    }        
+}
+
+@media print {
+    .menu, .navbar {
+        display: none;
+    }
+
+    .bill {        
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        .bill__information {
+            box-shadow: none;
+            border: none;
+            height: auto; 
+            .cafe{
+                .customer_name{
+                    form{
+                        display: none;
+                    }
+                   .seller-info{
+                    display: flex;
+                   } 
+                }
+            }         
+            .bill__table {
+                overflow: visible;
+
+                .items__description {
+                    columns: 2!important;      
+                    display: flex; 
+                }
+            }
+        }        
+
+        .remove-icon {
+            display: none;
+        }        
+
+        .bill__actions {
+            display: none;
+        }
+    }
+
+     @page {
+         margin: 0;
+     }
+}

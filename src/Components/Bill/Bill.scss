@@ -1,0 +1,226 @@
+
+.bill {
+    width: 35%;
+    background-color: #FFF;
+    height: 85vh;
+    padding: 10px;    
+    margin: 20px 0 0 10px;
+    border-radius: 10px;    
+
+    .bill__information {
+        border: 1px solid;       
+        height: 90%;
+        box-shadow: 3px 3px 5px;        
+        font-family: sans-serif;        
+        position: relative;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;        
+        .cafe {
+            margin: 5px auto;
+            text-align: start;
+            font-size: .9rem;
+
+            .customer_name {
+                font-size: 1.2rem;
+                padding: 10px;
+                .seller-info{
+                    display: none;
+                }
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .cName{
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        input{
+                            padding: .5vmax 7vmax;
+                            width: 80%;
+                            box-sizing: border-box;
+                            border: 1px solid rgba(0, 0, 0, 0.267);
+                            
+                            font: 300 0.9vmax cursive;
+                        }
+                        input:focus{
+                            outline: none; 
+                            border: 1px solid #4A7CB6;
+                        }
+                        .icon{
+                            font-size: 20px;
+                            color: #4A7CB6;
+                            box-sizing: border-box;
+                            border: 1px solid rgba(0, 0, 0, 0.267);
+                            width: 28px;
+                            height: 38px;
+                            padding: 2px;
+                            cursor: pointer;
+                        }
+                    }
+
+
+                    .wName{
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        select{
+                            padding: .5vmax 7vmax;
+                            width: 97%;
+                            box-sizing: border-box;
+                            border: 1px solid rgba(0, 0, 0, 0.267);
+                            
+                            font: 300 0.9vmax cursive;
+                        }
+                        
+                    }
+
+                    .bName{
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        input{
+                            padding: .5vmax 7vmax;
+                            width: 91%;
+                            box-sizing: border-box;
+                            border: 1px solid rgba(0, 0, 0, 0.267);
+                            
+                            font: 300 0.9vmax cursive;
+                        }
+                        input:focus{
+                            outline: none; 
+                            border: 1px solid #4A7CB6;
+                        }
+                        .icon{
+                            font-size: 20px;
+                            color: #4A7CB6;
+                            box-sizing: border-box;
+                            border: 1px solid rgba(0, 0, 0, 0.267);
+                            width: 28px;
+                            height: 38px;
+                            padding: 2px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .bill__table {       
+            height: 100%;
+            overflow-y: scroll;
+            table {
+                padding: 5px;
+                font-size: 14px;
+                margin-left: 5px;
+                width: 97%; 
+                border-collapse: collapse;               
+
+                th {    
+                    padding: 8px 8px;                                            
+                    border: 1px solid #ddd;
+                    border-left: 0;
+                    border-right: 0;
+                    background-color: #4A7CB6;
+                    color: #FFF;
+                    text-align: center;
+                }
+
+                td{
+                    border: 1px solid #ddd; 
+                    padding: 8px 8px; 
+                }
+
+                tr {
+                    text-align: center;
+                }
+
+                .items__description {
+                    columns: 2;
+                    text-align: left;
+                }
+
+                .remove-icon {
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .subtotal {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;                                            
+            width: 100%;     
+            margin: 10px 0;              
+           
+            .subtotal__price {
+                margin: 5px 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                p{
+                    background-color: rgb(212, 219, 219);
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px 10px;
+                    border-top: 1px solid #000;
+                }
+            
+            }
+        }
+    }
+
+    .bill__actions {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 30px 40px 40px;
+        .total-payable{
+            grid-column: 1/-1;
+            background-color: #2C2C2C;
+            color: #fff;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        .suspend{
+            grid-column: 1/-10;
+            background-color: #EDA443;
+            color: #fff;
+        }
+
+        .order{
+            grid-column: 4/-6;
+            background-color: #50B8D9;
+            color: #fff;
+        }
+
+        .payment{
+            grid-column: 8/-1;
+            background-color: #51AE50;
+            color: #fff;
+        }
+
+        .cancel{
+            grid-column: 1/-10;
+            background-color: #D44945;
+            color: #fff;
+        }
+
+        .bill-preview{
+            grid-column: 4/-6;
+            background-color: #3A7FC4;
+            color: #fff;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;       
+            background-color: transparent;
+            font-size: 1.2rem;                 
+        }
+    }
+}

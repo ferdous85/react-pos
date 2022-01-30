@@ -1,0 +1,47 @@
+[
+    {
+        "img": "https://picsum.photos/id/0/400/600",
+        "name": "MacBook Air",
+        "price": "966"
+    },
+    {
+        "img": "https://images.samsung.com/is/image/samsung/p6pim/bd/sm-a528blggbkd/gallery/bd-galaxy-a52s-5g-a528-sm-a528blggbkd-thumb-510843795?$160_160_PNG$",
+        "name": "Samsung Galaxy",
+        "price": "699"
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/Canon_EOS_1100D_with_Canon_EF-S_18-55mm_F3.5-5.6_IS_II.jpg",
+        "name": "Canon 1100D",
+        "price": "699"
+    },
+    {
+        "img": "https://picsum.photos/id/1/400/600",
+        "name": "MacBook Pro",
+        "price": "1500"
+    },
+    {
+        "img": "https://picsum.photos/id/2/400/600",
+        "name": "HP - Pavilon",
+        "price": "855"
+    },
+    {
+        "img": "https://picsum.photos/id/3/400/600",
+        "name": "Lenovo Ideapad",
+        "price": "755"
+    },
+    {
+        "img": "https://picsum.photos/id/4/400/600",
+        "name": "Drawing Pad",
+        "price": "288"
+    },
+    {
+        "img": "https://picsum.photos/id/9/400/600",
+        "name": "MacBook Pro (M1)",
+        "price": "1799"
+    },
+    {
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/61/Canon_EOS_1100D_with_Canon_EF-S_18-55mm_F3.5-5.6_IS_II.jpg",
+        "name": "Canon 1100D",
+        "price": "699"
+    }
+]
